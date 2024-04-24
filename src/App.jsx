@@ -1,10 +1,11 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import OthelloGame from './components/OthelloGame';
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Add routes here */}
+        <Route path="/othello" element={<OthelloGame />} />
       </Routes>
     </Router>
   );
